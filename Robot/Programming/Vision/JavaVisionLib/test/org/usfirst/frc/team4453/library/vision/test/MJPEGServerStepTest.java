@@ -3,51 +3,51 @@ package org.usfirst.frc.team4453.library.vision.test;
 import static org.junit.Assert.assertEquals;
 
 import java.io.IOException;
-import java.net.InetSocketAddress;
+//import java.net.InetSocketAddress;
 
 import org.junit.Test;
-import org.opencv.core.Core;
-import org.opencv.core.CvType;
-import org.opencv.core.Mat;
-import org.opencv.videoio.VideoCapture;
-import org.usfirst.frc.team4453.library.vision.Data;
+//import org.opencv.core.Core;
+//import org.opencv.core.CvType;
+//import org.opencv.core.Mat;
+//import org.opencv.videoio.VideoCapture;
+//import org.usfirst.frc.team4453.library.vision.Data;
 import org.usfirst.frc.team4453.library.vision.Pipeline;
-import org.usfirst.frc.team4453.library.vision.PipelineStep;
+//import org.usfirst.frc.team4453.library.vision.PipelineStep;
 import org.usfirst.frc.team4453.library.vision.pipelinesteps.opencv.MJPEGServerStep;
 
 public class MJPEGServerStepTest {
-	static
-	{
-		System.loadLibrary(Core.NATIVE_LIBRARY_NAME);
-	}
-	private class TestStep1 extends PipelineStep
-	{
-		public Mat inframe;
-		public TestStep1(Pipeline p) {
-			super(p);
-		}
-
-		@Override
-		protected boolean execute(Data in) {
-			in.put("frame", inframe);
-			return true;
-		}
-	}
-	
-	private class TestStep2 extends PipelineStep
-	{
-		public Mat out;
-		public TestStep2(Pipeline p) {
-			super(p);
-		}
-
-		@Override
-		protected boolean execute(Data in) {
-			out = (Mat) in.get("frame");
-			return true;
-		}
-	}
-	
+//	static
+//	{
+//		System.loadLibrary(Core.NATIVE_LIBRARY_NAME);
+//	}
+//	private class TestStep1 extends PipelineStep
+//	{
+//		public Mat inframe;
+//		public TestStep1(Pipeline p) {
+//			super(p);
+//		}
+//
+//		@Override
+//		protected boolean execute(Data in) {
+//			in.put("frame", inframe);
+//			return true;
+//		}
+//	}
+//	
+//	private class TestStep2 extends PipelineStep
+//	{
+//		public Mat out;
+//		public TestStep2(Pipeline p) {
+//			super(p);
+//		}
+//
+//		@Override
+//		protected boolean execute(Data in) {
+//			out = (Mat) in.get("frame");
+//			return true;
+//		}
+//	}
+//	
 //	@Test
 //	public void testMJPEGServerStep() throws InterruptedException, IOException {
 //		Pipeline p = new Pipeline();
