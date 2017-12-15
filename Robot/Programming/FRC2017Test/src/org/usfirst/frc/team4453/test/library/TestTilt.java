@@ -27,10 +27,10 @@ public class TestTilt {
 		assertEquals("39.3701 inches == 1 meter", Tilt.getMPI() * 39.3701, 1, 0.1);
 	}
 
-	@Test
-	public void testGetG() {
-		assertEquals("G is constant", Tilt.getG(), Tilt.getG(), 0.01);
-		assertEquals("G is close to 9.8", Tilt.getG(), 9.8, 0.1);
-	}
+//	@Test
+//	public void testGetG() {
+//		assertEquals("G is constant", Tilt.getG(), Tilt.getG(), 0.01);
+//		assertEquals("G is close to 9.8", Tilt.getG(), 9.8, 0.1);
+//	}
 
 }
