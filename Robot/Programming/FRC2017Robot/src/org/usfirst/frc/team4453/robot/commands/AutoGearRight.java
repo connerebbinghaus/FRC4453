@@ -1,7 +1,5 @@
 package org.usfirst.frc.team4453.robot.commands;
 
-import org.usfirst.frc.team4453.robot.Robot;
-
 import edu.wpi.first.wpilibj.command.CommandGroup;
 import edu.wpi.first.wpilibj.command.WaitCommand;
 import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
