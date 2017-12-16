@@ -98,11 +98,11 @@ public class Pipeline extends PipelineStep
 		return true;
 	}
 	
-	private ArrayBlockingQueue<Data> recycleStore;
+	private ArrayBlockingQueue<Data> recycleStore = new ArrayBlockingQueue<Data>(5);
 	
 	public Data generate()
 	{
-		return recycleStore.poll();
+		return recycleStore.peek() != null ? recycleStore.poll() : new Data();
 	}
 	
 	public void recycle(Data in)
