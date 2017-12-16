@@ -1,14 +1,23 @@
 package org.usfirst.frc.team4453.vision.library;
 
 import java.util.LinkedList;
+import java.util.concurrent.ArrayBlockingQueue;
 
 /**
  * This class represents a sequence of Pipeline Steps that run in parallel.
  * @author Conner Ebbinghaus
  *
  */
-public class Pipeline
+public class Pipeline extends PipelineStep
 {
+	public Pipeline() {
+		super(null);
+	}
+	
+	public Pipeline(Pipeline p) {
+		super(p);
+	}
+	
 	/**
 	 * The PipelineSteps.
 	 */
@@ -56,19 +65,40 @@ public class Pipeline
 		int i = steps.lastIndexOf(in);
 		if(i != -1 && steps.size() != i+1)
 		{
+			if(steps.get(i+1) instanceof Pipeline)
+			{
+				return ((Pipeline)steps.get(i+1)).steps.get(0);
+			}
 			return steps.get(i+1);
 		}
 		return null;
 	}
 	
 	/**
-	 * Returns true if the specified step is the first.
+	 * Returns true if the specified step is the first of the entire pipeline (not just this segment).
 	 * @param in The step.
 	 * @return True if the step is first.
 	 */
 	public boolean isFirst(PipelineStep in)
 	{
+		if(getPipeline() != null)
+		{
+			return false;
+		}
 		int i = steps.lastIndexOf(in);
 		return i==0;
+	}
+
+	@Override
+	protected boolean execute(Data in) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+	
+	private ArrayBlockingQueue<Data> recycleStore;
+	
+	public Data generate()
+	{
+		return recycleStore.poll();
 	}
 }

@@ -125,4 +125,13 @@ public abstract class PipelineStep implements Runnable {
 		thread.interrupt();
 		thread.join();
 	}
+
+	/**
+	 * Returns the pipeline this step belongs to.
+	 * @return The pipeline.
+	 */
+	protected Pipeline getPipeline()
+	{
+		return pipeline;
+	}
 }
