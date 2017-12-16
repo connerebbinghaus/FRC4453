@@ -60,6 +60,11 @@ public abstract class PipelineStep implements Runnable {
 		if(next == null)
 		{
 			next = pipeline.getNextStep(this);
+			
+			if(next==null)
+			{
+				getRootPipeline().recycle(in);
+			}
 		}
 		if(next != null)
 		{
@@ -76,7 +81,7 @@ public abstract class PipelineStep implements Runnable {
 	{
 		if(pipeline.isFirst(this))
 		{
-			return new Data();
+			return getRootPipeline().generate();
 		}
 		return inQueue.take();
 	}
@@ -133,5 +138,16 @@ public abstract class PipelineStep implements Runnable {
 	protected Pipeline getPipeline()
 	{
 		return pipeline;
+	}
+	
+	protected Pipeline getRootPipeline()
+	{
+		Pipeline p = getPipeline();
+		Pipeline tmp = null;
+		while((tmp = p.getPipeline()) != null)
+		{
+			p = tmp;
+		}
+		return p;
 	}
 }

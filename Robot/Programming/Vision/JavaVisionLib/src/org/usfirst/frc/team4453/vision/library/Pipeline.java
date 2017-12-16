@@ -71,6 +71,10 @@ public class Pipeline extends PipelineStep
 			}
 			return steps.get(i+1);
 		}
+		else if(getPipeline() != null)
+		{
+			return getPipeline().getNextStep(this);
+		}
 		return null;
 	}
 	
@@ -91,8 +95,7 @@ public class Pipeline extends PipelineStep
 
 	@Override
 	protected boolean execute(Data in) {
-		// TODO Auto-generated method stub
-		return false;
+		return true;
 	}
 	
 	private ArrayBlockingQueue<Data> recycleStore;
@@ -100,5 +103,10 @@ public class Pipeline extends PipelineStep
 	public Data generate()
 	{
 		return recycleStore.poll();
+	}
+	
+	public void recycle(Data in)
+	{
+		recycleStore.offer(in);
 	}
 }
