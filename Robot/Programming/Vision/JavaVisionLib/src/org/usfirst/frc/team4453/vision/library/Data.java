@@ -44,4 +44,12 @@ public class Data {
 		data.put(newkey, data.get(key));
 		data.remove(key);
 	}
+	
+	/**
+	 * Deletes all objects.
+	 */
+	public void clear()
+	{
+		data.clear();
+	}
 }

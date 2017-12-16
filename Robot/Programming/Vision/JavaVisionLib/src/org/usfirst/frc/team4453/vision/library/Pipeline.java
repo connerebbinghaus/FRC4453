@@ -107,6 +107,7 @@ public class Pipeline extends PipelineStep
 	
 	public void recycle(Data in)
 	{
+		in.clear();
 		recycleStore.offer(in);
 	}
 }

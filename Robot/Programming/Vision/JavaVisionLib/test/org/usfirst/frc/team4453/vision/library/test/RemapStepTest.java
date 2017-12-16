@@ -47,6 +47,7 @@ public class RemapStepTest {
 		map.put("foo1", "bar1");
 		map.put("bar2", "baz");
 		map.put("foo2", "bar2");
+		map.put("bar2", "baz");
 		
 		RemapStep step = new RemapStep(p, map);
 		TestStep1 step1 = new TestStep1(p);
