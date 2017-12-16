@@ -102,7 +102,7 @@ public class Pipeline extends PipelineStep
 	
 	public Data generate()
 	{
-		return recycleStore.poll();
+		return recycleStore.peek() != null ? recycleStore.poll() : new Data();
 	}
 	
 	public void recycle(Data in)
