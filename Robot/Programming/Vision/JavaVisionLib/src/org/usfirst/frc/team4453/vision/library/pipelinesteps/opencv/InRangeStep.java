@@ -1,11 +1,11 @@
-package org.usfirst.frc.team4453.library.vision.pipelinesteps.opencv;
+package org.usfirst.frc.team4453.vision.library.pipelinesteps.opencv;
 
 import org.opencv.core.Core;
 import org.opencv.core.Mat;
 import org.opencv.core.Scalar;
-import org.usfirst.frc.team4453.library.vision.Data;
-import org.usfirst.frc.team4453.library.vision.Pipeline;
-import org.usfirst.frc.team4453.library.vision.PipelineStep;
+import org.usfirst.frc.team4453.vision.library.Data;
+import org.usfirst.frc.team4453.vision.library.Pipeline;
+import org.usfirst.frc.team4453.vision.library.PipelineStep;
 
 /**
  * This PipelineStep runs the OpenCV inrange() function on the specified mat.

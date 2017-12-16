@@ -11,14 +11,14 @@ import org.opencv.core.Size;
 import org.opencv.imgproc.Imgproc;
 import org.opencv.objdetect.CascadeClassifier;
 import org.opencv.videoio.VideoCapture;
-import org.usfirst.frc.team4453.library.vision.Data;
-import org.usfirst.frc.team4453.library.vision.Pipeline;
-import org.usfirst.frc.team4453.library.vision.PipelineStep;
-import org.usfirst.frc.team4453.library.vision.pipelinesteps.opencv.CascadeClassifierStep;
-import org.usfirst.frc.team4453.library.vision.pipelinesteps.opencv.DrawRectsStep;
-import org.usfirst.frc.team4453.library.vision.pipelinesteps.opencv.MJPEGServerStep;
-import org.usfirst.frc.team4453.library.vision.pipelinesteps.opencv.RescaleStep;
-import org.usfirst.frc.team4453.library.vision.pipelinesteps.opencv.VideoCaptureStep;
+import org.usfirst.frc.team4453.vision.library.Data;
+import org.usfirst.frc.team4453.vision.library.Pipeline;
+import org.usfirst.frc.team4453.vision.library.PipelineStep;
+import org.usfirst.frc.team4453.vision.library.pipelinesteps.opencv.CascadeClassifierStep;
+import org.usfirst.frc.team4453.vision.library.pipelinesteps.opencv.DrawRectsStep;
+import org.usfirst.frc.team4453.vision.library.pipelinesteps.opencv.MJPEGServerStep;
+import org.usfirst.frc.team4453.vision.library.pipelinesteps.opencv.RescaleStep;
+import org.usfirst.frc.team4453.vision.library.pipelinesteps.opencv.VideoCaptureStep;
 /**
  * Similar to FaceDetectorExample, but also shows how to use custom steps.
  * @author Conner Ebbinghaus

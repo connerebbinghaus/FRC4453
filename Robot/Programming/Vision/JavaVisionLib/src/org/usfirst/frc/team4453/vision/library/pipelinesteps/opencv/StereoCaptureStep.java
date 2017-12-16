@@ -1,10 +1,10 @@
-package org.usfirst.frc.team4453.library.vision.pipelinesteps.opencv;
+package org.usfirst.frc.team4453.vision.library.pipelinesteps.opencv;
 
 import org.opencv.core.Mat;
 import org.opencv.videoio.VideoCapture;
-import org.usfirst.frc.team4453.library.vision.Data;
-import org.usfirst.frc.team4453.library.vision.Pipeline;
-import org.usfirst.frc.team4453.library.vision.PipelineStep;
+import org.usfirst.frc.team4453.vision.library.Data;
+import org.usfirst.frc.team4453.vision.library.Pipeline;
+import org.usfirst.frc.team4453.vision.library.PipelineStep;
 
 /**
  * This PipelineStep reads frames from two OpenCV VideoCapture objects at the same time and adds them under the given names.

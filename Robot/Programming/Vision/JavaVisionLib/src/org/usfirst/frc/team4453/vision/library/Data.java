@@ -1,4 +1,4 @@
-package org.usfirst.frc.team4453.library.vision;
+package org.usfirst.frc.team4453.vision.library;
 
 import java.util.HashMap;
 

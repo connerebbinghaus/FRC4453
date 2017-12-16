@@ -4,9 +4,9 @@ import java.io.IOException;
 
 import org.opencv.core.Core;
 import org.opencv.videoio.VideoCapture;
-import org.usfirst.frc.team4453.library.vision.Pipeline;
-import org.usfirst.frc.team4453.library.vision.pipelinesteps.opencv.MJPEGServerStep;
-import org.usfirst.frc.team4453.library.vision.pipelinesteps.opencv.VideoCaptureStep;
+import org.usfirst.frc.team4453.vision.library.Pipeline;
+import org.usfirst.frc.team4453.vision.library.pipelinesteps.opencv.MJPEGServerStep;
+import org.usfirst.frc.team4453.vision.library.pipelinesteps.opencv.VideoCaptureStep;
 
 /**
  * This is a simple test application.

@@ -1,13 +1,13 @@
-package org.usfirst.frc.team4453.library.vision.pipelinesteps.opencv;
+package org.usfirst.frc.team4453.vision.library.pipelinesteps.opencv;
 
 import java.util.ArrayList;
 
 import org.opencv.core.Mat;
 import org.opencv.core.MatOfPoint;
 import org.opencv.imgproc.Imgproc;
-import org.usfirst.frc.team4453.library.vision.Data;
-import org.usfirst.frc.team4453.library.vision.Pipeline;
-import org.usfirst.frc.team4453.library.vision.PipelineStep;
+import org.usfirst.frc.team4453.vision.library.Data;
+import org.usfirst.frc.team4453.vision.library.Pipeline;
+import org.usfirst.frc.team4453.vision.library.PipelineStep;
 
 public class FindContoursStep extends PipelineStep {
 	private String imageName, contoursName, hierarchyName;

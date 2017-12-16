@@ -1,4 +1,4 @@
-package org.usfirst.frc.team4453.library.vision.test;
+package org.usfirst.frc.team4453.vision.library.test;
 
 import static org.junit.Assert.*;
 
@@ -7,10 +7,10 @@ import org.opencv.core.Core;
 import org.opencv.core.CvType;
 import org.opencv.core.Mat;
 import org.opencv.core.Scalar;
-import org.usfirst.frc.team4453.library.vision.Data;
-import org.usfirst.frc.team4453.library.vision.Pipeline;
-import org.usfirst.frc.team4453.library.vision.PipelineStep;
-import org.usfirst.frc.team4453.library.vision.pipelinesteps.opencv.InRangeStep;
+import org.usfirst.frc.team4453.vision.library.Data;
+import org.usfirst.frc.team4453.vision.library.Pipeline;
+import org.usfirst.frc.team4453.vision.library.PipelineStep;
+import org.usfirst.frc.team4453.vision.library.pipelinesteps.opencv.InRangeStep;
 
 public class InRangeStepTest {
 	static

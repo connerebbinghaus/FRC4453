@@ -1,14 +1,14 @@
-package org.usfirst.frc.team4453.library.vision.test;
+package org.usfirst.frc.team4453.vision.library.test;
 
 import static org.junit.Assert.*;
 
 import java.util.HashMap;
 
 import org.junit.Test;
-import org.usfirst.frc.team4453.library.vision.Data;
-import org.usfirst.frc.team4453.library.vision.Pipeline;
-import org.usfirst.frc.team4453.library.vision.PipelineStep;
-import org.usfirst.frc.team4453.library.vision.pipelinesteps.RemapStep;
+import org.usfirst.frc.team4453.vision.library.Data;
+import org.usfirst.frc.team4453.vision.library.Pipeline;
+import org.usfirst.frc.team4453.vision.library.PipelineStep;
+import org.usfirst.frc.team4453.vision.library.pipelinesteps.RemapStep;
 
 public class RemapStepTest {
 

@@ -1,11 +1,11 @@
-package org.usfirst.frc.team4453.library.vision.pipelinesteps;
+package org.usfirst.frc.team4453.vision.library.pipelinesteps;
 
 import java.util.HashMap;
 import java.util.Map;
 
-import org.usfirst.frc.team4453.library.vision.Data;
-import org.usfirst.frc.team4453.library.vision.Pipeline;
-import org.usfirst.frc.team4453.library.vision.PipelineStep;
+import org.usfirst.frc.team4453.vision.library.Data;
+import org.usfirst.frc.team4453.vision.library.Pipeline;
+import org.usfirst.frc.team4453.vision.library.PipelineStep;
 
 /**
  * This PipelineStep renames data.
